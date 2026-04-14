@@ -1,0 +1,31 @@
+{
+  "total_images": 20,
+  "total_annotations": 83,
+  "total_classes": 18,
+  "splits_breakdown": {
+    "data": {
+      "images": 20,
+      "annotations": 83,
+      "classes": {
+        "inlaid_patch": 7,
+        "crack": 14,
+        "pothole": 4,
+        "scratch": 1,
+        "road_marking": 18,
+        "sealed_crack": 6,
+        "drill_hole": 1,
+        "joint": 6,
+        "vegetation": 8,
+        "open_joint": 2,
+        "curb": 4,
+        "cobblestone": 2,
+        "object_mobile": 1,
+        "object_fixed": 1,
+        "applied_patch": 2,
+        "road_verge": 3,
+        "surface_water_drain": 2,
+        "expansion_joint": 1
+      }
+    }
+  }
+}

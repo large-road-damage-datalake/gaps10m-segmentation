@@ -1,0 +1,263 @@
+{
+  "samples": [
+    {
+      "file": "sample_01_c4_inlaid_patch-road_marking-road_verge.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\16.jpg",
+      "classes": [
+        "inlaid_patch",
+        "road_marking",
+        "road_verge",
+        "vegetation"
+      ],
+      "num_classes": 4,
+      "objects": 4,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_01_c4_inlaid_patch-road_marking-road_verge_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_02_c5_applied_patch-crack-open_joint.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\07.jpg",
+      "classes": [
+        "applied_patch",
+        "crack",
+        "open_joint",
+        "pothole",
+        "road_marking"
+      ],
+      "num_classes": 5,
+      "objects": 5,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_02_c5_applied_patch-crack-open_joint_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_03_c5_crack-drill_hole-joint.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\01.jpg",
+      "classes": [
+        "crack",
+        "drill_hole",
+        "joint",
+        "road_marking",
+        "sealed_crack"
+      ],
+      "num_classes": 5,
+      "objects": 5,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_03_c5_crack-drill_hole-joint_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_04_c7_cobblestone-crack-curb.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\05.jpg",
+      "classes": [
+        "cobblestone",
+        "crack",
+        "curb",
+        "object_mobile",
+        "open_joint",
+        "pothole",
+        "road_marking"
+      ],
+      "num_classes": 7,
+      "objects": 7,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_04_c7_cobblestone-crack-curb_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_05_c5_crack-expansion_joint-joint.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\19.jpg",
+      "classes": [
+        "crack",
+        "expansion_joint",
+        "joint",
+        "road_marking",
+        "sealed_crack"
+      ],
+      "num_classes": 5,
+      "objects": 5,
+      "image_size": {
+        "width": 569,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5116,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_05_c5_crack-expansion_joint-joint_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_06_c3_crack-joint-road_marking.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\17.jpg",
+      "classes": [
+        "crack",
+        "joint",
+        "road_marking"
+      ],
+      "num_classes": 3,
+      "objects": 3,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_06_c3_crack-joint-road_marking_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_07_c5_curb-inlaid_patch-road_marking.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\15.jpg",
+      "classes": [
+        "curb",
+        "inlaid_patch",
+        "road_marking",
+        "surface_water_drain",
+        "vegetation"
+      ],
+      "num_classes": 5,
+      "objects": 5,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_07_c5_curb-inlaid_patch-road_marking_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_08_c3_inlaid_patch-road_marking-sealed_crack.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\02.jpg",
+      "classes": [
+        "inlaid_patch",
+        "road_marking",
+        "sealed_crack"
+      ],
+      "num_classes": 3,
+      "objects": 3,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_08_c3_inlaid_patch-road_marking-sealed_crack_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_09_c5_cobblestone-crack-curb.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\06.jpg",
+      "classes": [
+        "cobblestone",
+        "crack",
+        "curb",
+        "inlaid_patch",
+        "object_fixed"
+      ],
+      "num_classes": 5,
+      "objects": 5,
+      "image_size": {
+        "width": 560,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5030,
+        "height": 11505
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_09_c5_cobblestone-crack-curb_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_10_c5_crack-inlaid_patch-pothole.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS10m/images\\00.jpg",
+      "classes": [
+        "crack",
+        "inlaid_patch",
+        "pothole",
+        "road_marking",
+        "scratch"
+      ],
+      "num_classes": 5,
+      "objects": 5,
+      "image_size": {
+        "width": 565,
+        "height": 1280
+      },
+      "resized_from": {
+        "width": 5110,
+        "height": 11570
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_10_c5_crack-inlaid_patch-pothole_annotation.polygons.json",
+      "slider_ready": true
+    }
+  ],
+  "count": 10,
+  "slider_pairs": 10
+}

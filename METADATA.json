@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0",
+  "basic_info": {
+    "id": "gaps10m-segmentation",
+    "name": "GAPs10m",
+    "short_name": "gaps10m-seg",
+    "description": "Segmentation packaging of GAPs 10m with pixel-level asphalt distress/object masks from top-down road-surface imagery.",
+    "year": 2021,
+    "family_name": "GAPs",
+    "subset_name": "10m"
+  },
+  "project_context": {
+    "task": "segmentation",
+    "tasks": [
+      "segmentation"
+    ],
+    "damage_types": [
+      "applied_patch",
+      "cobblestone",
+      "crack",
+      "curb",
+      "drill_hole",
+      "expansion_joint",
+      "inlaid_patch",
+      "joint",
+      "object_fixed",
+      "object_mobile",
+      "open_joint",
+      "pothole",
+      "road_marking",
+      "road_verge",
+      "scratch",
+      "sealed_crack",
+      "surface_water_drain",
+      "vegetation"
+    ],
+    "task_classification": {
+      "primary_task": "segmentation",
+      "task_subtype": "semantic_segmentation"
+    },
+    "segmentation_type": "semantic_segmentation",
+    "task_subtype": "semantic_segmentation"
+  },
+  "imaging_setup": {
+    "camera": "Surface camera system on certified mobile mapping vehicle",
+    "camera_viewpoint": [
+      "top-down"
+    ],
+    "resolution": "5030x11505, 5110x11570, 5116x11505",
+    "lighting_conditions": "Vehicle-mounted synchronized lighting for road-surface capture",
+    "capture_height_mm": "Not reported",
+    "geotagged": false,
+    "resolution_details": [
+      {
+        "resolution": "5030x11505",
+        "count": 17
+      },
+      {
+        "resolution": "5110x11570",
+        "count": 2
+      },
+      {
+        "resolution": "5116x11505",
+        "count": 1
+      }
+    ]
+  },
+  "annotation_schema": [
+    {
+      "type": "segmentation_mask",
+      "description": "Pixel-level multi-class masks (gray-value coded)",
+      "classes": [
+        {
+          "id": 1,
+          "name": "applied_patch",
+          "description": "GAPs10m class: applied_patch",
+          "color": "#294F71"
+        },
+        {
+          "id": 2,
+          "name": "cobblestone",
+          "description": "GAPs10m class: cobblestone",
+          "color": "#529EE2"
+        },
+        {
+          "id": 3,
+          "name": "crack",
+          "description": "GAPs10m class: crack",
+          "color": "#7BED54"
+        },
+        {
+          "id": 4,
+          "name": "curb",
+          "description": "GAPs10m class: curb",
+          "color": "#A43DC5"
+        },
+        {
+          "id": 5,
+          "name": "drill_hole",
+          "description": "GAPs10m class: drill_hole",
+          "color": "#CD8C37"
+        },
+        {
+          "id": 6,
+          "name": "expansion_joint",
+          "description": "GAPs10m class: expansion_joint",
+          "color": "#F6DBA8"
+        },
+        {
+          "id": 7,
+          "name": "inlaid_patch",
+          "description": "GAPs10m class: inlaid_patch",
+          "color": "#202B1A"
+        },
+        {
+          "id": 8,
+          "name": "joint",
+          "description": "GAPs10m class: joint",
+          "color": "#497A8B"
+        },
+        {
+          "id": 9,
+          "name": "object_fixed",
+          "description": "GAPs10m class: object_fixed",
+          "color": "#72C9FC"
+        },
+        {
+          "id": 10,
+          "name": "object_mobile",
+          "description": "GAPs10m class: object_mobile",
+          "color": "#9B196E"
+        },
+        {
+          "id": 11,
+          "name": "open_joint",
+          "description": "GAPs10m class: open_joint",
+          "color": "#C468DF"
+        },
+        {
+          "id": 12,
+          "name": "pothole",
+          "description": "GAPs10m class: pothole",
+          "color": "#EDB751"
+        },
+        {
+          "id": 13,
+          "name": "road_marking",
+          "description": "GAPs10m class: road_marking",
+          "color": "#1707C2"
+        },
+        {
+          "id": 14,
+          "name": "road_verge",
+          "description": "GAPs10m class: road_verge",
+          "color": "#405634"
+        },
+        {
+          "id": 15,
+          "name": "scratch",
+          "description": "GAPs10m class: scratch",
+          "color": "#69A5A5"
+        },
+        {
+          "id": 16,
+          "name": "sealed_crack",
+          "description": "GAPs10m class: sealed_crack",
+          "color": "#92F417"
+        },
+        {
+          "id": 17,
+          "name": "surface_water_drain",
+          "description": "GAPs10m class: surface_water_drain",
+          "color": "#BB4488"
+        },
+        {
+          "id": 18,
+          "name": "vegetation",
+          "description": "GAPs10m class: vegetation",
+          "color": "#E493F9"
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "n_images": 20,
+    "n_annotations": 83,
+    "n_images_with_annotations": 20,
+    "average_annotations_per_image": 4.15,
+    "dataset_size": "235.76 MB",
+    "dataset_size_bytes": 247211921,
+    "dataset_file_count": 40,
+    "image_format": "png_masks",
+    "class_distribution": {
+      "inlaid_patch": 7,
+      "crack": 14,
+      "pothole": 4,
+      "scratch": 1,
+      "road_marking": 18,
+      "sealed_crack": 6,
+      "drill_hole": 1,
+      "joint": 6,
+      "vegetation": 8,
+      "open_joint": 2,
+      "curb": 4,
+      "cobblestone": 2,
+      "object_mobile": 1,
+      "object_fixed": 1,
+      "applied_patch": 2,
+      "road_verge": 3,
+      "surface_water_drain": 2,
+      "expansion_joint": 1
+    },
+    "split": {
+      "data": {
+        "n_images": 20,
+        "percentage": 1.0,
+        "n_images_with_annotations": 20,
+        "annotation_coverage": 1.0,
+        "dataset_size": "235.76 MB",
+        "dataset_size_bytes": 247211921,
+        "dataset_file_count": 40
+      }
+    }
+  },
+  "geographic_coverage": {
+    "countries": [
+      {
+        "name": "Germany",
+        "image_count": 20,
+        "annotated_image_count": 20,
+        "annotation_coverage": 1.0
+      }
+    ],
+    "temporal_scope": "Published in 2021"
+  },
+  "quality_assurance": {
+    "annotation_quality": "Pixel-level expert labels in GAPs 10m release",
+    "inter_annotator_agreement": "Not reported",
+    "review_status": "Published benchmark dataset",
+    "data_acquisition_notes": "Source website describes BASt-certified road monitoring workflow and mobile mapping acquisition process."
+  },
+  "authors": [
+    {
+      "name": "Ronny Stricker",
+      "affiliation": "Technische Universitat Ilmenau",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Dustin Aganian",
+      "affiliation": "Technische Universitat Ilmenau",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Maximilian Sesselmann",
+      "affiliation": "Technische Universitat Ilmenau",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Daniel Seichter",
+      "affiliation": "Technische Universitat Ilmenau",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Marius Engelhardt",
+      "affiliation": "Technische Universitat Ilmenau",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Roland Spielhofer",
+      "affiliation": "LEHMANN + PARTNER GmbH",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Matthias Hahn",
+      "affiliation": "LEHMANN + PARTNER GmbH",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Astrid Hautz",
+      "affiliation": "LEHMANN + PARTNER GmbH",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Klaus Debes",
+      "affiliation": "Technische Universitat Ilmenau",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Horst-Michael Gross",
+      "affiliation": "Technische Universitat Ilmenau",
+      "role": "Dataset Creator"
+    }
+  ],
+  "license": "Academic use only; access requires written permission and provider-issued login",
+  "links": {
+    "github": "https://github.com/large-road-damage-datalake/gaps10m-segmentation",
+    "download": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
+    "paper": "https://ieeexplore.ieee.org/document/9551591",
+    "homepage": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
+    "request_form": "https://www.tu-ilmenau.de/fileadmin/Bereiche/IA/neurob/Datasets/Request-Gaps3.pdf",
+    "request_email": "mailto:nikr-datasets-request@tu-ilmenau.de"
+  },
+  "citation": {
+    "bibtex": "@inproceedings{stricker2021road,\n  title = {Road Surface Segmentation - Pixel-Perfect Distress and Object Detection for Road Assessment},\n  author = {Stricker, Ronny and Aganian, Dustin and Sesselmann, Maximilian and Seichter, Daniel and Engelhardt, Marius and Spielhofer, Roland and Hahn, Matthias and Hautz, Astrid and Debes, Klaus and Gross, Horst-Michael},\n  booktitle = {IEEE International Conference on Automation Science and Engineering (CASE)},\n  pages = {1--8},\n  year = {2021},\n  doi = {10.1109/CASE49439.2021.9551591},\n  url = {https://ieeexplore.ieee.org/document/9551591}\n}"
+  },
+  "tags": [
+    "segmentation",
+    "gaps10m",
+    "multiclass-mask",
+    "road-distress",
+    "germany",
+    "top-down",
+    "permission-required"
+  ],
+  "source_publication": {
+    "dataset_doi": "Not provided",
+    "article_doi": "10.1109/CASE49439.2021.9551591",
+    "article_title": "Road Surface Segmentation - Pixel-Perfect Distress and Object Detection for Road Assessment",
+    "journal": "IEEE International Conference on Automation Science and Engineering (CASE)",
+    "year": 2021
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "type": "treemap",
+  "title": "Average area of class objects on image",
+  "series": [
+    {
+      "data": [
+        {
+          "x": "road_marking",
+          "y": 3.9405
+        },
+        {
+          "x": "crack",
+          "y": 0.4926
+        },
+        {
+          "x": "vegetation",
+          "y": 3.9689
+        },
+        {
+          "x": "inlaid_patch",
+          "y": 1.1694
+        },
+        {
+          "x": "sealed_crack",
+          "y": 1.9151
+        },
+        {
+          "x": "joint",
+          "y": 0.5833
+        },
+        {
+          "x": "pothole",
+          "y": 0.1913
+        },
+        {
+          "x": "curb",
+          "y": 3.4776
+        },
+        {
+          "x": "road_verge",
+          "y": 1.2431
+        },
+        {
+          "x": "open_joint",
+          "y": 0.3811
+        },
+        {
+          "x": "cobblestone",
+          "y": 7.8138
+        },
+        {
+          "x": "applied_patch",
+          "y": 0.3398
+        },
+        {
+          "x": "surface_water_drain",
+          "y": 0.5428
+        },
+        {
+          "x": "scratch",
+          "y": 2.2297
+        },
+        {
+          "x": "drill_hole",
+          "y": 0.1404
+        },
+        {
+          "x": "object_mobile",
+          "y": 1.6064
+        },
+        {
+          "x": "object_fixed",
+          "y": 0.079
+        },
+        {
+          "x": "expansion_joint",
+          "y": 6.5154
+        }
+      ]
+    }
+  ],
+  "value_unit": "%"
+}
