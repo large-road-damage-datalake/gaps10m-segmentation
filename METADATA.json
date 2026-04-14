@@ -7,7 +7,8 @@
     "description": "Segmentation packaging of GAPs 10m with pixel-level asphalt distress/object masks from top-down road-surface imagery.",
     "year": 2021,
     "family_name": "GAPs",
-    "subset_name": "10m"
+    "subset_name": "10m",
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
   },
   "project_context": {
     "task": "segmentation",
@@ -39,31 +40,20 @@
       "task_subtype": "semantic_segmentation"
     },
     "segmentation_type": "semantic_segmentation",
-    "task_subtype": "semantic_segmentation"
+    "task_subtype": "semantic_segmentation",
+    "family_name": "GAPs",
+    "subset_name": "10m",
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
   },
   "imaging_setup": {
     "camera": "Surface camera system on certified mobile mapping vehicle",
     "camera_viewpoint": [
       "top-down"
     ],
-    "resolution": "5030x11505, 5110x11570, 5116x11505",
+    "resolution": "Primarily about 5030x11505 for GAPs 10m public set",
     "lighting_conditions": "Vehicle-mounted synchronized lighting for road-surface capture",
     "capture_height_mm": "Not reported",
-    "geotagged": false,
-    "resolution_details": [
-      {
-        "resolution": "5030x11505",
-        "count": 17
-      },
-      {
-        "resolution": "5110x11570",
-        "count": 2
-      },
-      {
-        "resolution": "5116x11505",
-        "count": 1
-      }
-    ]
+    "geotagged": false
   },
   "annotation_schema": [
     {
