@@ -50,10 +50,24 @@
     "camera_viewpoint": [
       "top-down"
     ],
-    "resolution": "Primarily about 5030x11505 for GAPs 10m public set",
+    "resolution": "5030x11505, 5110x11570, 5116x11505",
     "lighting_conditions": "Vehicle-mounted synchronized lighting for road-surface capture",
     "capture_height_mm": "Not reported",
-    "geotagged": false
+    "geotagged": false,
+    "resolution_details": [
+      {
+        "resolution": "5030x11505",
+        "count": 17
+      },
+      {
+        "resolution": "5110x11570",
+        "count": 2
+      },
+      {
+        "resolution": "5116x11505",
+        "count": 1
+      }
+    ]
   },
   "annotation_schema": [
     {
