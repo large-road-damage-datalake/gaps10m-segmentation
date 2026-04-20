@@ -345,7 +345,7 @@
     "year": 2021
   },
   "class_taxonomy": {
-    "version": "road_damage_v1",
+    "version": "road_damage_v2",
     "classes": [
       {
         "canonical_name": "context.cobblestone",
@@ -353,6 +353,9 @@
         "damage_family": "context_non_damage",
         "damage_subtype": "cobblestone",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "cobblestone"
@@ -360,8 +363,10 @@
         "source_labels": [
           "cobblestone"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "context.curb",
@@ -369,6 +374,9 @@
         "damage_family": "context_non_damage",
         "damage_subtype": "curb",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "curb"
@@ -376,15 +384,20 @@
         "source_labels": [
           "curb"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "context.object_fixed",
-        "display_name": "Fixed Object",
+        "display_name": "Object Fixed",
         "damage_family": "context_non_damage",
         "damage_subtype": "object_fixed",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "dataset_specific",
         "is_damage_target": false,
         "aliases": [
           "object_fixed"
@@ -392,15 +405,20 @@
         "source_labels": [
           "object_fixed"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook_specialized",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "context.object_mobile",
-        "display_name": "Mobile Object",
+        "display_name": "Object Mobile",
         "damage_family": "context_non_damage",
         "damage_subtype": "object_mobile",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "dataset_specific",
         "is_damage_target": false,
         "aliases": [
           "object_mobile"
@@ -408,8 +426,10 @@
         "source_labels": [
           "object_mobile"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook_specialized",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "context.road_marking",
@@ -417,6 +437,9 @@
         "damage_family": "context_non_damage",
         "damage_subtype": "road_marking",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "road_marking"
@@ -424,8 +447,10 @@
         "source_labels": [
           "road_marking"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "context.road_verge",
@@ -433,6 +458,9 @@
         "damage_family": "context_non_damage",
         "damage_subtype": "road_verge",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "road_verge"
@@ -440,8 +468,10 @@
         "source_labels": [
           "road_verge"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "context.surface_water_drain",
@@ -449,6 +479,9 @@
         "damage_family": "context_non_damage",
         "damage_subtype": "surface_water_drain",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "dataset_specific",
         "is_damage_target": false,
         "aliases": [
           "surface_water_drain"
@@ -456,8 +489,10 @@
         "source_labels": [
           "surface_water_drain"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "context.vegetation",
@@ -465,6 +500,9 @@
         "damage_family": "context_non_damage",
         "damage_subtype": "vegetation",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "vegetation"
@@ -472,8 +510,10 @@
         "source_labels": [
           "vegetation"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "crack",
@@ -481,6 +521,9 @@
         "damage_family": "crack",
         "damage_subtype": "generic",
         "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
         "is_damage_target": true,
         "aliases": [
           "crack",
@@ -489,29 +532,35 @@
         "source_labels": [
           "crack"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "crack.sealed",
         "display_name": "Sealed Crack",
         "damage_family": "crack",
         "damage_subtype": "sealed",
-        "role": "repair",
-        "is_damage_target": false,
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "provisional",
+        "is_damage_target": true,
         "aliases": [
           "sealed",
-          "sealed_crack",
-          "Sealed Longitudinal Crack",
-          "Sealed Reflective Crack",
-          "Sealed Block Crack",
-          "Sealed Transvers Cracks"
+          "sealed_crack"
         ],
         "source_labels": [
           "sealed_crack"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high",
+        "resolved_attributes": {
+          "treatment_state": "sealed"
+        }
       },
       {
         "canonical_name": "joint.expansion",
@@ -519,6 +568,9 @@
         "damage_family": "joint_distress",
         "damage_subtype": "expansion_joint",
         "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
         "is_damage_target": false,
         "aliases": [
           "expansion_joint"
@@ -526,8 +578,10 @@
         "source_labels": [
           "expansion_joint"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "joint.generic",
@@ -535,6 +589,9 @@
         "damage_family": "joint_distress",
         "damage_subtype": "generic",
         "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
         "is_damage_target": false,
         "aliases": [
           "joint"
@@ -542,8 +599,10 @@
         "source_labels": [
           "joint"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "joint.open",
@@ -551,6 +610,9 @@
         "damage_family": "joint_distress",
         "damage_subtype": "open_joint",
         "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
         "is_damage_target": false,
         "aliases": [
           "open_joint"
@@ -558,8 +620,10 @@
         "source_labels": [
           "open_joint"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "patch.applied",
@@ -567,6 +631,9 @@
         "damage_family": "patch_repair",
         "damage_subtype": "applied",
         "role": "repair",
+        "semantic_role": "repair",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "applied_patch"
@@ -574,8 +641,10 @@
         "source_labels": [
           "applied_patch"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "patch.inlaid",
@@ -583,6 +652,9 @@
         "damage_family": "patch_repair",
         "damage_subtype": "inlaid",
         "role": "repair",
+        "semantic_role": "repair",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "inlaid_patch"
@@ -590,8 +662,10 @@
         "source_labels": [
           "inlaid_patch"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "pothole",
@@ -599,6 +673,9 @@
         "damage_family": "pothole",
         "damage_subtype": "generic",
         "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
         "is_damage_target": true,
         "aliases": [
           "pothole"
@@ -606,8 +683,10 @@
         "source_labels": [
           "pothole"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "surface.scratch",
@@ -615,6 +694,9 @@
         "damage_family": "surface_distress",
         "damage_subtype": "scratch",
         "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
         "is_damage_target": false,
         "aliases": [
           "scratch"
@@ -622,15 +704,20 @@
         "source_labels": [
           "scratch"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "unknown.drill_hole",
-        "display_name": "Drill Hole",
+        "display_name": "Unknown Drill Hole",
         "damage_family": "unknown",
         "damage_subtype": "",
         "role": "unknown",
+        "semantic_role": "unknown",
+        "training_role": "ignore",
+        "status": "provisional",
         "is_damage_target": false,
         "aliases": [
           "drill_hole"
@@ -638,8 +725,10 @@
         "source_labels": [
           "drill_hole"
         ],
-        "taxonomy_source": "fallback_unknown",
-        "taxonomy_unresolved": true
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": true,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       }
     ],
     "damage_types": [
