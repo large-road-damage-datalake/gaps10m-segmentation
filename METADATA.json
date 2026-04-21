@@ -96,7 +96,7 @@
           "name": "drill_hole",
           "description": "GAPs10m class: drill_hole",
           "color": "#CD8C37",
-          "canonical_name": "unknown.drill_hole",
+          "canonical_name": "pothole",
           "instances": 1
         },
         {
@@ -678,10 +678,12 @@
         "status": "stable",
         "is_damage_target": true,
         "aliases": [
-          "pothole"
+          "pothole",
+          "drill_hole"
         ],
         "source_labels": [
-          "pothole"
+          "pothole",
+          "drill_hole"
         ],
         "taxonomy_source": "codebook",
         "taxonomy_unresolved": false,
@@ -708,35 +710,12 @@
         "taxonomy_unresolved": false,
         "mapping_type": "codebook-based",
         "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "unknown.drill_hole",
-        "display_name": "Unknown Drill Hole",
-        "damage_family": "unknown",
-        "damage_subtype": "",
-        "role": "unknown",
-        "semantic_role": "unknown",
-        "training_role": "ignore",
-        "status": "provisional",
-        "is_damage_target": false,
-        "aliases": [
-          "drill_hole"
-        ],
-        "source_labels": [
-          "drill_hole"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": true,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
       }
     ],
     "damage_types": [
       "crack",
       "pothole"
     ],
-    "unresolved_labels": [
-      "drill_hole"
-    ]
+    "unresolved_labels": []
   }
 }
