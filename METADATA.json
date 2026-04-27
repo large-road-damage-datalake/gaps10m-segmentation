@@ -236,7 +236,7 @@
       {
         "canonical_name": "class.negative",
         "display_name": "Negative",
-        "damage_family": "unknown",
+        "damage_family": "non_damage",
         "damage_subtype": "negative",
         "role": "negative",
         "semantic_role": "absence",
