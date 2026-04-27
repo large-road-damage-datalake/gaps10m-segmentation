@@ -3,12 +3,20 @@
   "dir": "visualizations/spatial_heatmaps",
   "classes": [
     {
+      "class": "crack",
+      "file": "visualizations/spatial_heatmaps/crack.png"
+    },
+    {
       "class": "road_marking",
       "file": "visualizations/spatial_heatmaps/road_marking.png"
     },
     {
-      "class": "crack",
-      "file": "visualizations/spatial_heatmaps/crack.png"
+      "class": "sealed_crack",
+      "file": "visualizations/spatial_heatmaps/sealed_crack.png"
+    },
+    {
+      "class": "road_verge",
+      "file": "visualizations/spatial_heatmaps/road_verge.png"
     },
     {
       "class": "vegetation",
@@ -19,24 +27,28 @@
       "file": "visualizations/spatial_heatmaps/inlaid_patch.png"
     },
     {
-      "class": "sealed_crack",
-      "file": "visualizations/spatial_heatmaps/sealed_crack.png"
+      "class": "pothole",
+      "file": "visualizations/spatial_heatmaps/pothole.png"
+    },
+    {
+      "class": "scratch",
+      "file": "visualizations/spatial_heatmaps/scratch.png"
     },
     {
       "class": "joint",
       "file": "visualizations/spatial_heatmaps/joint.png"
     },
     {
-      "class": "pothole",
-      "file": "visualizations/spatial_heatmaps/pothole.png"
-    },
-    {
       "class": "curb",
       "file": "visualizations/spatial_heatmaps/curb.png"
     },
     {
-      "class": "road_verge",
-      "file": "visualizations/spatial_heatmaps/road_verge.png"
+      "class": "drill_hole",
+      "file": "visualizations/spatial_heatmaps/drill_hole.png"
+    },
+    {
+      "class": "applied_patch",
+      "file": "visualizations/spatial_heatmaps/applied_patch.png"
     },
     {
       "class": "open_joint",
@@ -47,28 +59,16 @@
       "file": "visualizations/spatial_heatmaps/cobblestone.png"
     },
     {
-      "class": "applied_patch",
-      "file": "visualizations/spatial_heatmaps/applied_patch.png"
+      "class": "object_fixed",
+      "file": "visualizations/spatial_heatmaps/object_fixed.png"
     },
     {
       "class": "surface_water_drain",
       "file": "visualizations/spatial_heatmaps/surface_water_drain.png"
     },
     {
-      "class": "scratch",
-      "file": "visualizations/spatial_heatmaps/scratch.png"
-    },
-    {
-      "class": "drill_hole",
-      "file": "visualizations/spatial_heatmaps/drill_hole.png"
-    },
-    {
       "class": "object_mobile",
       "file": "visualizations/spatial_heatmaps/object_mobile.png"
-    },
-    {
-      "class": "object_fixed",
-      "file": "visualizations/spatial_heatmaps/object_fixed.png"
     },
     {
       "class": "expansion_joint",

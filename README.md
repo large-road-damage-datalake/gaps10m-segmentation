@@ -6,7 +6,7 @@ GAPs10m is a task-specific segmentation package derived from the German Asphalt 
 
 - Task: segmentation
 - Images: 20
-- Annotations: 83
+- Annotations: 345
 - Classes in local package stats: 18 (applied_patch, cobblestone, crack, curb, drill_hole, expansion_joint, inlaid_patch, joint, object_fixed, object_mobile, open_joint, pothole, road_marking, road_verge, scratch, sealed_crack, surface_water_drain, vegetation)
 - Annotation format: grayscale PNG masks (class-coded)
 

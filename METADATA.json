@@ -8,7 +8,7 @@
     "year": 2021,
     "family_name": "GAPs",
     "subset_name": "10m",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (GAPs384, GAPsV2, and GAPs10m)."
   },
   "project_context": {
     "task": "segmentation",
@@ -23,12 +23,12 @@
       "primary_task": "segmentation",
       "task_subtype": "semantic_segmentation"
     },
+    "label_taxonomy_version": "road_damage_v2",
     "segmentation_type": "semantic_segmentation",
     "task_subtype": "semantic_segmentation",
     "family_name": "GAPs",
     "subset_name": "10m",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m).",
-    "label_taxonomy_version": "road_damage_v1"
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (GAPs384, GAPsV2, and GAPs10m)."
   },
   "imaging_setup": {
     "camera": "Surface camera system on certified mobile mapping vehicle",
@@ -52,6 +52,30 @@
         "resolution": "5116x11505",
         "count": 1
       }
+    ],
+    "resolution_by_country": [
+      {
+        "name": "Germany",
+        "resolutions": [
+          "5030x11505",
+          "5110x11570",
+          "5116x11505"
+        ],
+        "resolution_details": [
+          {
+            "resolution": "5030x11505",
+            "count": 17
+          },
+          {
+            "resolution": "5110x11570",
+            "count": 2
+          },
+          {
+            "resolution": "5116x11505",
+            "count": 1
+          }
+        ]
+      }
     ]
   },
   "annotation_schema": [
@@ -65,7 +89,7 @@
           "description": "GAPs10m class: applied_patch",
           "color": "#294F71",
           "canonical_name": "patch.applied",
-          "instances": 2
+          "instances": 3
         },
         {
           "id": 2,
@@ -81,7 +105,7 @@
           "description": "GAPs10m class: crack",
           "color": "#7BED54",
           "canonical_name": "crack",
-          "instances": 14
+          "instances": 188
         },
         {
           "id": 4,
@@ -89,7 +113,7 @@
           "description": "GAPs10m class: curb",
           "color": "#A43DC5",
           "canonical_name": "context.curb",
-          "instances": 4
+          "instances": 5
         },
         {
           "id": 5,
@@ -97,7 +121,7 @@
           "description": "GAPs10m class: drill_hole",
           "color": "#CD8C37",
           "canonical_name": "pothole",
-          "instances": 1
+          "instances": 3
         },
         {
           "id": 6,
@@ -113,7 +137,7 @@
           "description": "GAPs10m class: inlaid_patch",
           "color": "#202B1A",
           "canonical_name": "patch.inlaid",
-          "instances": 7
+          "instances": 12
         },
         {
           "id": 8,
@@ -121,7 +145,7 @@
           "description": "GAPs10m class: joint",
           "color": "#497A8B",
           "canonical_name": "joint.generic",
-          "instances": 6
+          "instances": 7
         },
         {
           "id": 9,
@@ -129,7 +153,7 @@
           "description": "GAPs10m class: object_fixed",
           "color": "#72C9FC",
           "canonical_name": "context.object_fixed",
-          "instances": 1
+          "instances": 2
         },
         {
           "id": 10,
@@ -153,7 +177,7 @@
           "description": "GAPs10m class: pothole",
           "color": "#EDB751",
           "canonical_name": "pothole",
-          "instances": 4
+          "instances": 11
         },
         {
           "id": 13,
@@ -161,7 +185,7 @@
           "description": "GAPs10m class: road_marking",
           "color": "#1707C2",
           "canonical_name": "context.road_marking",
-          "instances": 18
+          "instances": 47
         },
         {
           "id": 14,
@@ -169,7 +193,7 @@
           "description": "GAPs10m class: road_verge",
           "color": "#405634",
           "canonical_name": "context.road_verge",
-          "instances": 3
+          "instances": 16
         },
         {
           "id": 15,
@@ -177,7 +201,7 @@
           "description": "GAPs10m class: scratch",
           "color": "#69A5A5",
           "canonical_name": "surface.scratch",
-          "instances": 1
+          "instances": 7
         },
         {
           "id": 16,
@@ -185,7 +209,7 @@
           "description": "GAPs10m class: sealed_crack",
           "color": "#92F417",
           "canonical_name": "crack.sealed",
-          "instances": 6
+          "instances": 23
         },
         {
           "id": 17,
@@ -201,46 +225,442 @@
           "description": "GAPs10m class: vegetation",
           "color": "#E493F9",
           "canonical_name": "context.vegetation",
-          "instances": 8
+          "instances": 13
         }
       ]
     }
   ],
+  "class_taxonomy": {
+    "version": "road_damage_v2",
+    "classes": [
+      {
+        "canonical_name": "class.negative",
+        "display_name": "Negative",
+        "damage_family": "unknown",
+        "damage_subtype": "negative",
+        "role": "negative",
+        "semantic_role": "absence",
+        "training_role": "negative",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "void",
+          "normal",
+          "intact",
+          "background"
+        ],
+        "source_labels": [
+          "void",
+          "normal"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.cobblestone",
+        "display_name": "Cobblestone",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "cobblestone",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "cobblestone"
+        ],
+        "source_labels": [
+          "cobblestone"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.curb",
+        "display_name": "Curb",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "curb",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "curb"
+        ],
+        "source_labels": [
+          "curb"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.object_fixed",
+        "display_name": "Object Fixed",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "object_fixed",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "object_fixed"
+        ],
+        "source_labels": [
+          "object_fixed"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.object_mobile",
+        "display_name": "Object Mobile",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "object_mobile",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "object_mobile"
+        ],
+        "source_labels": [
+          "object_mobile"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.road_marking",
+        "display_name": "Road Marking",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "road_marking",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "road_marking"
+        ],
+        "source_labels": [
+          "road_marking"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.road_verge",
+        "display_name": "Road Verge",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "road_verge",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "road_verge"
+        ],
+        "source_labels": [
+          "road_verge"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.surface_water_drain",
+        "display_name": "Surface Water Drain",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "surface_water_drain",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "surface_water_drain"
+        ],
+        "source_labels": [
+          "surface_water_drain"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "context.vegetation",
+        "display_name": "Vegetation",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "vegetation",
+        "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "vegetation"
+        ],
+        "source_labels": [
+          "vegetation"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
+        "is_damage_target": true,
+        "aliases": [
+          "crack",
+          "cracked"
+        ],
+        "source_labels": [
+          "crack"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "crack.sealed",
+        "display_name": "Sealed Crack",
+        "damage_family": "crack",
+        "damage_subtype": "sealed",
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "provisional",
+        "is_damage_target": true,
+        "aliases": [
+          "sealed",
+          "sealed_crack"
+        ],
+        "source_labels": [
+          "sealed_crack"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "joint.expansion",
+        "display_name": "Expansion",
+        "damage_family": "joint_distress",
+        "damage_subtype": "expansion",
+        "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
+        "is_damage_target": false,
+        "aliases": [
+          "expansion_joint"
+        ],
+        "source_labels": [
+          "expansion_joint"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "joint.generic",
+        "display_name": "Generic",
+        "damage_family": "joint_distress",
+        "damage_subtype": "generic",
+        "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
+        "is_damage_target": false,
+        "aliases": [
+          "joint"
+        ],
+        "source_labels": [
+          "joint"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "joint.open",
+        "display_name": "Open",
+        "damage_family": "joint_distress",
+        "damage_subtype": "open",
+        "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
+        "is_damage_target": false,
+        "aliases": [
+          "open_joint"
+        ],
+        "source_labels": [
+          "open_joint"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "patch.applied",
+        "display_name": "Applied",
+        "damage_family": "patch_repair",
+        "damage_subtype": "applied",
+        "role": "repair",
+        "semantic_role": "repair",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "applied_patch"
+        ],
+        "source_labels": [
+          "applied_patch"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "patch.inlaid",
+        "display_name": "Inlaid",
+        "damage_family": "patch_repair",
+        "damage_subtype": "inlaid",
+        "role": "repair",
+        "semantic_role": "repair",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "inlaid_patch"
+        ],
+        "source_labels": [
+          "inlaid_patch"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "pothole",
+        "display_name": "Pothole",
+        "damage_family": "pothole",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
+        "is_damage_target": true,
+        "aliases": [
+          "pothole",
+          "drill_hole"
+        ],
+        "source_labels": [
+          "drill_hole",
+          "pothole"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "surface.scratch",
+        "display_name": "Scratch",
+        "damage_family": "surface_distress",
+        "damage_subtype": "scratch",
+        "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
+        "is_damage_target": false,
+        "aliases": [
+          "scratch"
+        ],
+        "source_labels": [
+          "scratch"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      }
+    ],
+    "damage_types": [
+      "crack",
+      "pothole"
+    ],
+    "unresolved_labels": []
+  },
   "statistics": {
     "n_images": 20,
-    "n_annotations": 83,
+    "n_annotations": 345,
     "n_images_with_annotations": 20,
-    "average_annotations_per_image": 4.15,
+    "average_annotations_per_image": 17.25,
     "dataset_size": "235.76 MB",
     "dataset_size_bytes": 247211921,
     "dataset_file_count": 40,
     "image_format": "png_masks",
     "class_distribution": {
-      "inlaid_patch": 7,
-      "crack": 14,
-      "pothole": 4,
-      "scratch": 1,
-      "road_marking": 18,
-      "sealed_crack": 6,
-      "drill_hole": 1,
-      "joint": 6,
-      "vegetation": 8,
+      "inlaid_patch": 12,
+      "crack": 188,
+      "pothole": 11,
+      "scratch": 7,
+      "road_marking": 47,
+      "sealed_crack": 23,
+      "drill_hole": 3,
+      "joint": 7,
+      "vegetation": 13,
       "open_joint": 2,
-      "curb": 4,
+      "curb": 5,
       "cobblestone": 2,
       "object_mobile": 1,
-      "object_fixed": 1,
-      "applied_patch": 2,
-      "road_verge": 3,
+      "object_fixed": 2,
+      "applied_patch": 3,
+      "road_verge": 16,
       "surface_water_drain": 2,
       "expansion_joint": 1
     },
     "split": {
       "data": {
         "n_images": 20,
-        "percentage": 1,
+        "percentage": 1.0,
         "n_images_with_annotations": 20,
-        "annotation_coverage": 1,
+        "annotation_coverage": 1.0,
         "dataset_size": "235.76 MB",
         "dataset_size_bytes": 247211921,
         "dataset_file_count": 40
@@ -253,7 +673,7 @@
         "name": "Germany",
         "image_count": 20,
         "annotated_image_count": 20,
-        "annotation_coverage": 1
+        "annotation_coverage": 1.0
       }
     ],
     "temporal_scope": "Published in 2021"
@@ -343,379 +763,5 @@
     "article_title": "Road Surface Segmentation - Pixel-Perfect Distress and Object Detection for Road Assessment",
     "journal": "IEEE International Conference on Automation Science and Engineering (CASE)",
     "year": 2021
-  },
-  "class_taxonomy": {
-    "version": "road_damage_v2",
-    "classes": [
-      {
-        "canonical_name": "context.cobblestone",
-        "display_name": "Cobblestone",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "cobblestone",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "stable",
-        "is_damage_target": false,
-        "aliases": [
-          "cobblestone"
-        ],
-        "source_labels": [
-          "cobblestone"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "context.curb",
-        "display_name": "Curb",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "curb",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "stable",
-        "is_damage_target": false,
-        "aliases": [
-          "curb"
-        ],
-        "source_labels": [
-          "curb"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "context.object_fixed",
-        "display_name": "Object Fixed",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "object_fixed",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "dataset_specific",
-        "is_damage_target": false,
-        "aliases": [
-          "object_fixed"
-        ],
-        "source_labels": [
-          "object_fixed"
-        ],
-        "taxonomy_source": "codebook_specialized",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "context.object_mobile",
-        "display_name": "Object Mobile",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "object_mobile",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "dataset_specific",
-        "is_damage_target": false,
-        "aliases": [
-          "object_mobile"
-        ],
-        "source_labels": [
-          "object_mobile"
-        ],
-        "taxonomy_source": "codebook_specialized",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "context.road_marking",
-        "display_name": "Road Marking",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "road_marking",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "stable",
-        "is_damage_target": false,
-        "aliases": [
-          "road_marking"
-        ],
-        "source_labels": [
-          "road_marking"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "context.road_verge",
-        "display_name": "Road Verge",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "road_verge",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "stable",
-        "is_damage_target": false,
-        "aliases": [
-          "road_verge"
-        ],
-        "source_labels": [
-          "road_verge"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "context.surface_water_drain",
-        "display_name": "Surface Water Drain",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "surface_water_drain",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "dataset_specific",
-        "is_damage_target": false,
-        "aliases": [
-          "surface_water_drain"
-        ],
-        "source_labels": [
-          "surface_water_drain"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "context.vegetation",
-        "display_name": "Vegetation",
-        "damage_family": "context_non_damage",
-        "damage_subtype": "vegetation",
-        "role": "context",
-        "semantic_role": "non_road_context",
-        "training_role": "context",
-        "status": "stable",
-        "is_damage_target": false,
-        "aliases": [
-          "vegetation"
-        ],
-        "source_labels": [
-          "vegetation"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "crack",
-        "display_name": "Crack",
-        "damage_family": "crack",
-        "damage_subtype": "generic",
-        "role": "damage_target",
-        "semantic_role": "damage",
-        "training_role": "target",
-        "status": "stable",
-        "is_damage_target": true,
-        "aliases": [
-          "crack",
-          "cracked"
-        ],
-        "source_labels": [
-          "crack"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "crack.sealed",
-        "display_name": "Sealed Crack",
-        "damage_family": "crack",
-        "damage_subtype": "sealed",
-        "role": "damage_target",
-        "semantic_role": "damage",
-        "training_role": "target",
-        "status": "provisional",
-        "is_damage_target": true,
-        "aliases": [
-          "sealed",
-          "sealed_crack"
-        ],
-        "source_labels": [
-          "sealed_crack"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high",
-        "resolved_attributes": {
-          "treatment_state": "sealed"
-        }
-      },
-      {
-        "canonical_name": "joint.expansion",
-        "display_name": "Expansion Joint",
-        "damage_family": "joint_distress",
-        "damage_subtype": "expansion_joint",
-        "role": "context",
-        "semantic_role": "road_feature",
-        "training_role": "context",
-        "status": "provisional",
-        "is_damage_target": false,
-        "aliases": [
-          "expansion_joint"
-        ],
-        "source_labels": [
-          "expansion_joint"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "joint.generic",
-        "display_name": "Joint",
-        "damage_family": "joint_distress",
-        "damage_subtype": "generic",
-        "role": "context",
-        "semantic_role": "road_feature",
-        "training_role": "context",
-        "status": "provisional",
-        "is_damage_target": false,
-        "aliases": [
-          "joint"
-        ],
-        "source_labels": [
-          "joint"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "joint.open",
-        "display_name": "Open Joint",
-        "damage_family": "joint_distress",
-        "damage_subtype": "open_joint",
-        "role": "context",
-        "semantic_role": "road_feature",
-        "training_role": "context",
-        "status": "provisional",
-        "is_damage_target": false,
-        "aliases": [
-          "open_joint"
-        ],
-        "source_labels": [
-          "open_joint"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "patch.applied",
-        "display_name": "Applied Patch",
-        "damage_family": "patch_repair",
-        "damage_subtype": "applied",
-        "role": "repair",
-        "semantic_role": "repair",
-        "training_role": "context",
-        "status": "stable",
-        "is_damage_target": false,
-        "aliases": [
-          "applied_patch"
-        ],
-        "source_labels": [
-          "applied_patch"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "patch.inlaid",
-        "display_name": "Inlaid Patch",
-        "damage_family": "patch_repair",
-        "damage_subtype": "inlaid",
-        "role": "repair",
-        "semantic_role": "repair",
-        "training_role": "context",
-        "status": "stable",
-        "is_damage_target": false,
-        "aliases": [
-          "inlaid_patch"
-        ],
-        "source_labels": [
-          "inlaid_patch"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "pothole",
-        "display_name": "Pothole",
-        "damage_family": "pothole",
-        "damage_subtype": "generic",
-        "role": "damage_target",
-        "semantic_role": "damage",
-        "training_role": "target",
-        "status": "stable",
-        "is_damage_target": true,
-        "aliases": [
-          "pothole",
-          "drill_hole"
-        ],
-        "source_labels": [
-          "pothole",
-          "drill_hole"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      },
-      {
-        "canonical_name": "surface.scratch",
-        "display_name": "Scratch",
-        "damage_family": "surface_distress",
-        "damage_subtype": "scratch",
-        "role": "context",
-        "semantic_role": "road_feature",
-        "training_role": "context",
-        "status": "provisional",
-        "is_damage_target": false,
-        "aliases": [
-          "scratch"
-        ],
-        "source_labels": [
-          "scratch"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      }
-    ],
-    "damage_types": [
-      "crack",
-      "pothole"
-    ],
-    "unresolved_labels": []
   }
 }

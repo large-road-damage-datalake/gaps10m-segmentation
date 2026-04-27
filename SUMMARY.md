@@ -4,7 +4,7 @@
 - Source dataset: GAPs 10m
 - Task: segmentation
 - Image count: 20
-- Annotation count: 83
+- Annotation count: 345
 - Class setup in local stats: 18 (applied_patch, cobblestone, crack, curb, drill_hole, expansion_joint, inlaid_patch, joint, object_fixed, object_mobile, open_joint, pothole, road_marking, road_verge, scratch, sealed_crack, surface_water_drain, vegetation)
 - Country: Germany
 - Camera viewpoint: top-down

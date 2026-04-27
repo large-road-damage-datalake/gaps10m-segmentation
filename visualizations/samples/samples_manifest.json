@@ -10,7 +10,7 @@
         "vegetation"
       ],
       "num_classes": 4,
-      "objects": 4,
+      "objects": 6,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -23,6 +23,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_01_c4_inlaid_patch-road_marking-road_verge_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -36,7 +62,7 @@
         "road_marking"
       ],
       "num_classes": 5,
-      "objects": 5,
+      "objects": 17,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -49,6 +75,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_02_c5_applied_patch-crack-open_joint_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -62,7 +114,7 @@
         "sealed_crack"
       ],
       "num_classes": 5,
-      "objects": 5,
+      "objects": 34,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -75,6 +127,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_03_c5_crack-drill_hole-joint_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -90,7 +168,7 @@
         "road_marking"
       ],
       "num_classes": 7,
-      "objects": 7,
+      "objects": 10,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -103,6 +181,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_04_c7_cobblestone-crack-curb_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -116,7 +220,7 @@
         "sealed_crack"
       ],
       "num_classes": 5,
-      "objects": 5,
+      "objects": 19,
       "image_size": {
         "width": 569,
         "height": 1280
@@ -129,6 +233,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_05_c5_crack-expansion_joint-joint_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -140,7 +270,7 @@
         "road_marking"
       ],
       "num_classes": 3,
-      "objects": 3,
+      "objects": 22,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -153,6 +283,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_06_c3_crack-joint-road_marking_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -166,7 +322,7 @@
         "vegetation"
       ],
       "num_classes": 5,
-      "objects": 5,
+      "objects": 7,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -179,6 +335,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_07_c5_curb-inlaid_patch-road_marking_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -190,7 +372,7 @@
         "sealed_crack"
       ],
       "num_classes": 3,
-      "objects": 3,
+      "objects": 7,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -203,6 +385,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_08_c3_inlaid_patch-road_marking-sealed_crack_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -216,7 +424,7 @@
         "object_fixed"
       ],
       "num_classes": 5,
-      "objects": 5,
+      "objects": 8,
       "image_size": {
         "width": 560,
         "height": 1280
@@ -229,6 +437,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_09_c5_cobblestone-crack-curb_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     },
     {
@@ -242,7 +476,7 @@
         "scratch"
       ],
       "num_classes": 5,
-      "objects": 5,
+      "objects": 17,
       "image_size": {
         "width": 565,
         "height": 1280
@@ -255,6 +489,32 @@
       "annotation_format": "polygon",
       "annotated_file": null,
       "annotation_file": "annotations/sample_10_c5_crack-inlaid_patch-pothole_annotation.polygons.json",
+      "class_map": {
+        "0": "void",
+        "1": "inlaid_patch",
+        "2": "applied_patch",
+        "3": "sealed_crack",
+        "4": "crack",
+        "5": "open_joint",
+        "6": "pothole",
+        "7": "raveling",
+        "8": "scratch",
+        "9": "bleeding",
+        "10": "road_marking",
+        "11": "surface_water_drain",
+        "12": "manhole",
+        "13": "expansion_joint",
+        "14": "curb",
+        "15": "cobblestone",
+        "16": "drill_hole",
+        "17": "object_mobile",
+        "18": "object_fixed",
+        "19": "joint",
+        "20": "road_verge",
+        "21": "vegetation",
+        "22": "induction_loop",
+        "23": "normal"
+      },
       "slider_ready": true
     }
   ],

@@ -1,30 +1,58 @@
 {
   "total_images": 20,
-  "total_annotations": 83,
+  "total_annotations": 345,
   "total_classes": 18,
+  "annotated_images": 20,
+  "annotation_coverage": 1.0,
+  "image_resolution_histogram": {
+    "5030x11505": 17,
+    "5110x11570": 2,
+    "5116x11505": 1
+  },
+  "resolution_details": [
+    {
+      "resolution": "5030x11505",
+      "count": 17
+    },
+    {
+      "resolution": "5110x11570",
+      "count": 2
+    },
+    {
+      "resolution": "5116x11505",
+      "count": 1
+    }
+  ],
   "splits_breakdown": {
     "data": {
       "images": 20,
-      "annotations": 83,
+      "annotations": 345,
+      "annotated_images": 20,
+      "annotation_coverage": 1.0,
       "classes": {
-        "inlaid_patch": 7,
-        "crack": 14,
-        "pothole": 4,
-        "scratch": 1,
-        "road_marking": 18,
-        "sealed_crack": 6,
-        "drill_hole": 1,
-        "joint": 6,
-        "vegetation": 8,
+        "inlaid_patch": 12,
+        "crack": 188,
+        "pothole": 11,
+        "scratch": 7,
+        "road_marking": 47,
+        "sealed_crack": 23,
+        "drill_hole": 3,
+        "joint": 7,
+        "vegetation": 13,
         "open_joint": 2,
-        "curb": 4,
+        "curb": 5,
         "cobblestone": 2,
         "object_mobile": 1,
-        "object_fixed": 1,
-        "applied_patch": 2,
-        "road_verge": 3,
+        "object_fixed": 2,
+        "applied_patch": 3,
+        "road_verge": 16,
         "surface_water_drain": 2,
         "expansion_joint": 1
+      },
+      "image_resolution_histogram": {
+        "5030x11505": 17,
+        "5110x11570": 2,
+        "5116x11505": 1
       }
     }
   }
